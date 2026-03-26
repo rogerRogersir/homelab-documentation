@@ -8,6 +8,19 @@ The lab currently includes a Proxmox host, Windows Server Domain Controller, and
 
 ---
 
+## What I Learned From This Project
+Through building this homelab environment, I gained hands-on experience with:
+
+- Installing and configuring a hypervisor (Proxmox)
+- Creating and managing virtual machines
+- Installing Windows Server and configuring Active Directory Domain Services
+- Configuring DNS and static IP addressing
+- Joining Windows clients to a domain
+- Troubleshooting driver, DNS, and network connectivity issues
+- Understanding how enterprise network environments are structured
+
+---
+
 ## Network Diagram
 *(Insert network diagram image here later)*
 
@@ -84,3 +97,24 @@ Proxmox Host (192.168.1.82)
 - Networking (IP, Gateway, DNS)
 - Linux Server Basics
 - Troubleshooting Infrastructure Issues
+
+
+---
+
+## Lab Architecture
+
+This homelab simulates a small business network environment.
+
+Current environment:
+
+Router
+│
+Proxmox Host
+│
+├── DC01 – Windows Server 2022 (Domain Controller, DNS)
+└── W10-ADM – Windows 10 Admin Workstation
+
+Future planned systems:
+├── W10-01 – Employee Workstation
+├── FS01 – File Server
+└── UBU01 – Linux Server
